@@ -19,12 +19,12 @@
 				
 				<div class="blog-bottom-info">
 					<ul>
-						<li><i class="fa fa-calendar"></i> July 30, 2014</li>
+						<li><i class="fa fa-calendar"></i> $Date.Long </li>
 						<li><i class="fa fa-comments-o"></i> 3 Comments</li>
 						<li><i class="fa fa-tags"></i> Properties, Prices, best deals</li>
 					</ul>
 					
-					<div id="post-author"><i class="fa fa-pencil"></i> By John Doe</div>
+					<div id="post-author"><i class="fa fa-pencil"></i> By $Author</div>
 				</div>
 				
 				<div class="post-content">
@@ -55,7 +55,7 @@
 							<img src="images/comment-man.jpg" alt="" />
 							<div class="comment">
 								<a href="#" class="btn btn-default-color">Reply</a>
-								<h3>John Doe<small>30 July, 2014</small></h3>
+								<h3>$Author<small>$Date.Long</small></h3>
 								<p>Etiam eget felis lacus. In hendrerit, urna in fringilla interdum, nunc mauris condimentum purus, vel ullamcorper dui risus sed tellus. Nullam lacinia porttitor velit fermentum accumsan. Etiam dui lorem, lobortis pellentesque malesuada nec, lacinia pulvinar libero.</p>
 							</div>
 							<ul>
@@ -63,7 +63,7 @@
 									<img src="images/comment-man.jpg" alt="" />
 									<div class="comment">
 										<a href="#" class="btn btn-default-color">Reply</a>
-										<h3>John Doe<small>30 July, 2014</small></h3>
+										<h3>$Author<small>$Date.Long</small></h3>
 										<p>In hendrerit, urna in fringilla interdum, nunc mauris condimentum purus, vel ullamcorper dui risus sed tellus. Nullam lacinia porttitor velit fermentum accumsan. Etiam dui lorem, lobortis pellentesque malesuada nec, lacinia pulvinar libero.</p>
 									</div>
 								</li>
@@ -73,7 +73,7 @@
 							<img src="images/comment-woman.jpg" alt="" />
 							<div class="comment">
 								<a href="#" class="btn btn-default-color">Reply</a>
-								<h3>Mary Doe<small>31 July, 2014</small></h3>
+								<h3>$Author<small>$Date.Long</small></h3>
 								<p>Etiam eget felis lacus. In hendrerit, urna in fringilla interdum, nunc mauris condimentum purus, vel ullamcorper dui risus sed tellus. Nullam lacinia porttitor velit fermentum accumsan. Etiam dui lorem, lobortis pellentesque malesuada nec, lacinia pulvinar libero. Quisque pretium nunc sed nisl vehicula gravida. Lorem ipsum dolor sit amet, consectetur adipiscing elit.</p>
 							</div>
 						</li>
@@ -220,7 +220,7 @@
 						</div>
 						
 						<ul class="top-info">
-							<li><i class="fa fa-calendar"></i> July 30, 2014</li>
+							<li><i class="fa fa-calendar"></i> $Date.Long</li>
 						</ul>
 							
 						<h3><a href="blog-detail.html">How to get your dream property for the best price?</a></h3>
@@ -232,7 +232,7 @@
 						</div>
 						
 						<ul class="top-info">
-							<li><i class="fa fa-calendar"></i> July 24, 2014</li>
+							<li><i class="fa fa-calendar"></i> $Date.Long</li>
 						</ul>
 							
 						<h3><a href="blog-detail.html">7 tips to get the best mortgage.</a></h3>
@@ -244,7 +244,7 @@
 						</div>
 						
 						<ul class="top-info">
-							<li><i class="fa fa-calendar"></i> July 05, 2014</li>
+							<li><i class="fa fa-calendar"></i> $Date.Long</li>
 						</ul>
 						
 						<h3><a href="blog-detail.html">House, location or price: What's the most important factor?</a></h3>
