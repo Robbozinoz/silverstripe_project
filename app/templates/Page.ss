@@ -27,14 +27,14 @@
 	<!-- Google Web Font -->
 	<link href="http://fonts.googleapis.com/css?family=Raleway:300,500,900%7COpen+Sans:400,700,400italic" rel="stylesheet" type="text/css" />
 	
-	<!-- Bootstrap CSS -->
-	<link href="css/bootstrap.min.css" rel="stylesheet" />
+	<!-- Bootstrap CSS
+	<link href="css/bootstrap.min.css" rel="stylesheet" />-->
 	
-	<!-- Template CSS -->
-	<link href="css/style.css" rel="stylesheet" />
+	<!-- Template CSS
+	<link href="css/style.css" rel="stylesheet" />-->
 	
-	<!-- Modernizr -->
-	<script src="js/common/modernizr.js"></script>
+	<!-- Modernizr
+	<script src="js/common/modernizr.js"></script>-->
 </head>
 <body>
 	<!-- BEGIN WRAPPER -->

@@ -1,18 +1,5 @@
-		<!-- BEGIN PAGE TITLE/BREADCRUMB -->
-		<div class="parallax colored-bg pattern-bg">
-			<div class="container">
-				<div class="row">
-					<div class="col-sm-12">
-						<h1 class="page-title">$Title</h1>
-						
-						<div class="breadcrumb">
-							$Breadcrumbs
-						</div>
-					</div>
-				</div>
-			</div>
-		</div>
-		<!-- END PAGE TITLE/BREADCRUMB -->
+		<!--Breadcrumb now in includes as standard site template-->
+		<% include Banner %>
 		
 		
 		<!-- BEGIN CONTENT -->
@@ -37,7 +24,7 @@
 						<ul class="categories subnav">
 							<!--New loop for the sidebar with if loop-->
 							<% if $Menu(2) %>
-								<h3>In this section</h3>
+								<!--<h3>In this section</h3>-->
 								<ul class="subnav">  
 								<% loop $Menu(2) %>
 									<li><a class="$LinkingMode" href="$Link">$MenuTitle</a></li>
