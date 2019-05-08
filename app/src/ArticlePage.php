@@ -2,7 +2,6 @@
 
 namespace SilverStripe\Onering_jr;
 
-
 use SilverStripe\Forms\DateField;
 use SilverStripe\Forms\TextareaField;
 use SilverStripe\Forms\TextField;
@@ -25,13 +24,13 @@ class ArticlePage extends Page
       $fields = parent::getCMSFields();
       //Take the $fields array and apply to the database and CMS dashboard
       //PLace fields before content in CMS editor
-      $fields->addFieldToTab('Root.Main', DateField::create('Date','Date of article'),'Content');
+
+      $fields->addFieldToTab('Root.Main', DateField::create('Date','Date of article'), 'Content');
       $fields->addFieldToTab('Root.Main', TextareaField::create('Teaser')
-      ->setDescription('This is the summary that appears on the article list page.'),
-      'Content'
+        ->setDescription('This is the summary that appears on the article list page.'),
+        'Content'
       );
       $fields->addFieldToTab('Root.Main', TextField::create('Author','Author of article'),'Content');
-  
       return $fields;
     }
 }
