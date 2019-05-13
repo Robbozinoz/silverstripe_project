@@ -3,11 +3,17 @@
 
 
 <!-- BEGIN CONTENT WRAPPER -->
+		
 <div class="content">
 	<div class="container">
 		<div class="row">
+
+			<!-- BEGIN MAIN CONTENT
+			<div class="post-content main col-sm-8">
+				$Content				
+			</div>-->	
 		
-			<!-- BEGIN MAIN CONTENT -->
+				<!-- BEGIN MAIN CONTENT -->
 			<div class="main col-sm-8">
 			
 				<h1 class="blog-title">$Title</h1>
@@ -24,7 +30,7 @@
 						<li><i class="fa fa-tags"></i> Properties, Prices, best deals</li>
 					</ul>
 					
-					<div id="post-author"><i class="fa fa-pencil"></i> By $Author</div>
+					<div id="post-author"><i class="fa fa-pencil"></i> By $Author.LimitCharacterCount </div>
 				</div>
 				
 				<div class="post-content">
@@ -55,7 +61,7 @@
 							<img src="images/comment-man.jpg" alt="" />
 							<div class="comment">
 								<a href="#" class="btn btn-default-color">Reply</a>
-								<h3>$Author<small>$Date.Long</small></h3>
+								<h3>$Author.Name<small>$Date.Long</small></h3>
 								<p>Etiam eget felis lacus. In hendrerit, urna in fringilla interdum, nunc mauris condimentum purus, vel ullamcorper dui risus sed tellus. Nullam lacinia porttitor velit fermentum accumsan. Etiam dui lorem, lobortis pellentesque malesuada nec, lacinia pulvinar libero.</p>
 							</div>
 							<ul>
@@ -63,7 +69,7 @@
 									<img src="images/comment-man.jpg" alt="" />
 									<div class="comment">
 										<a href="#" class="btn btn-default-color">Reply</a>
-										<h3>$Author<small>$Date.Long</small></h3>
+										<h3>$Author.Name<small>$Date.Long</small></h3>
 										<p>In hendrerit, urna in fringilla interdum, nunc mauris condimentum purus, vel ullamcorper dui risus sed tellus. Nullam lacinia porttitor velit fermentum accumsan. Etiam dui lorem, lobortis pellentesque malesuada nec, lacinia pulvinar libero.</p>
 									</div>
 								</li>
@@ -73,7 +79,7 @@
 							<img src="images/comment-woman.jpg" alt="" />
 							<div class="comment">
 								<a href="#" class="btn btn-default-color">Reply</a>
-								<h3>$Author<small>$Date.Long</small></h3>
+								<h3>$Author.Name<small>$Date.Long</small></h3>
 								<p>Etiam eget felis lacus. In hendrerit, urna in fringilla interdum, nunc mauris condimentum purus, vel ullamcorper dui risus sed tellus. Nullam lacinia porttitor velit fermentum accumsan. Etiam dui lorem, lobortis pellentesque malesuada nec, lacinia pulvinar libero. Quisque pretium nunc sed nisl vehicula gravida. Lorem ipsum dolor sit amet, consectetur adipiscing elit.</p>
 							</div>
 						</li>
