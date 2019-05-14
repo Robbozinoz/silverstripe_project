@@ -2,7 +2,7 @@
 	<div class="container">
 		<div class="row">
 			<div class="col-sm-12">
-				<h1 class="page-title">Blog Listing 4</h1>
+				<h1 class="page-title">Latest Blog</h1>
                 <!--Check to see if this needs to be a div-->
 				<ul class="breadcrumb">
 					$Breadcrumbs					
