@@ -19,7 +19,10 @@
 				<h1 class="blog-title">$Title</h1>
 				
 				<div class="blog-main-image">
-					<img src="http://placehold.it/765x362" alt="" />
+					<!--Function call variable for large image resizing and adding a custom class-->
+					<% with $Photo.ScaleWidth(750) %>
+						<img class="my-custom-class" src="$URL" alt="" width="$Width" height="$Height" />
+					<% end_with %>
 					<div class="tag"><i class="fa fa-file-text"></i></div>
 				</div>
 				
@@ -30,7 +33,7 @@
 						<li><i class="fa fa-tags"></i> Properties, Prices, best deals</li>
 					</ul>
 					
-					<div id="post-author"><i class="fa fa-pencil"></i> By $Author.LimitCharacterCount </div>
+					<div id="post-author"><i class="fa fa-pencil"></i> By $Author.Name </div>
 				</div>
 				
 				<div class="post-content">
@@ -52,6 +55,17 @@
 						<i class="fa fa-print"></i>
 					</a>
 				</div>
+				
+				<!--Add brochure download butto & use scope block "DRY"-->
+			    <% if $Brochure %>
+				<div class="row">
+					<% with $Brochure %>
+					<div class="col-sm-12">
+						<a href="$URL" class="btn btn-warning btn-block"><i class="fa fa-download"></i> Download $Title - [$Extension] ($Size)</a>                  
+					</div>
+					<% end_with %>
+				</div>
+				<% end_if %>
 				
 				<h1 class="section-title">Comments</h1>
 				

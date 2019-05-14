@@ -18,13 +18,19 @@ class ArticlePage extends Page
   private static $db = [
     'Date' => 'Date',
     'Teaser' => 'Text',
-    'Author' => 'Text',
+    'Author' => 'Varchar'
   ];
 
   //Add columns to the database as Foreign keys and ID so they are constant
   private static $has_one = [
     'Photo' => Image::class,
     'Brochure' => File::class
+  ];
+
+  //Load images without login
+  private static $owns = [
+    'Photo',
+    'Brochure',
   ];
 
   //Lesson 6 exposing the update facility for the CMS to the article page class to allow for new field editing but including page class fields
@@ -66,8 +72,13 @@ class ArticlePage extends Page
       )
     );
 
+    //Set and create new relative folder for photo assets
+    $photo->setFolderName('travel-photos');
+
     //Validate that only PDF's cabn be uploaded
-    $brochure->getValidator()->setAllowedExtensions(['pdf']);
+    $brochure
+      ->setFolderName('travel-brochures')
+      ->getValidator()->setAllowedExtensions(['pdf']);
 
     return $fields;
   }
